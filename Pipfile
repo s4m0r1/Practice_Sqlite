@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+pylint = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+db-setup = "python src/setup.py"
+db-delete = "python src/delete.py"
+start = "python src/main.py"
